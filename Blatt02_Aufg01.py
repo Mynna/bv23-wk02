@@ -61,6 +61,22 @@ new_img[0:y,x:x*2]= img_var3
 
 # Zeige das neue Bild an
 plt.imshow(new_img,cmap="gray",vmin=0,vmax=255)
+#plt.show()
+
+##Aufg. 1.4
+brosche= img[340:430,120:220]
+#brosche[0,0]=0 #"ein Pixel" auf schwarz; funktioniert nur bei ipynb, aber nicht py
+plt.imshow(img,cmap="gray",vmin=0,vmax=255)
+#plt.show()
+
+#Antwort: es findet eine Änderung im Originalbild statt
+
+##Aufg. 1.5
+mask=np.zeros(img.shape)
+mask[340:430,120:220]=1
+maskedImg= img*mask
+plt.imshow(maskedImg,cmap="gray",vmin=0,vmax=255)
 plt.show()
+
 
 
