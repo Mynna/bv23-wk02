@@ -22,11 +22,11 @@ def s_p_noise(local_img, pr):
     return s_p_img
 
 s_p=s_p_noise(img,0.1)
-#plt.imshow(s_p, cmap="gray")
-#plt.show()
+plt.imshow(s_p, cmap="copper")
+plt.show()
 
 g_p=add_gauss_noise(img,25)
-plt.imshow(g_p, cmap="gray")
-plt.show()
+# plt.imshow(g_p, cmap="gray")
+# plt.show()
 
 
