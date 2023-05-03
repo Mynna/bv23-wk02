@@ -15,7 +15,7 @@ def add_gauss_noise(local_img,st_dev):
 
 
 def s_p_noise(local_img, pr):
-    #s_p_array=np.random.choice([-255,0,255],img.shape,p=[probability/2,1-probability,probability/2])
+    
     s_p_array=np.random.choice([-255,0,255],img.shape,p=[pr/2,1-pr,pr/2])
     s_p_img=local_img + s_p_array
     s_p_img= np.clip(s_p_img,0,255)
