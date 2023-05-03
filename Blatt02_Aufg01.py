@@ -55,8 +55,8 @@ new_img= np.zeros((x*2,y*2))
 
 # Fülle die vier Quadranten des neuen Bildes mit den verschiedenen Versionen des Originalbildes
 new_img[y:y*2,0:x]= img
-new_img[y:y*2,x:x*2]= img_var1
-new_img[0:y,0:x]= img_var2
+new_img[y:y*2,x:x*2]= img_var2
+new_img[0:y,0:x]= img_var1
 new_img[0:y,x:x*2]= img_var3
 
 # Zeige das neue Bild an
